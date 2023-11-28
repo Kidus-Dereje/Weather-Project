@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Mukta:wght@500&family=Poppins:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-image: url(weather.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.logos1{
+    top: 0;
+    position: absolute;
+    font-size: 250px;
+    margin-left: 80px;
+    color: white;
+    z-index: -2;
+}
+.logos2{
+    position: absolute;
+    top: 0;
+    font-size: 150px;
+    margin-left: 90px;
+    color: white;
+    z-index: -1;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 33vh;
+    position: sticky;
+}
+.hleft{
+    width: 60%;
+}
+.hleft h1{
+    font-size: 60px;
+    padding-left: 30px;
+    color: white;
+    width: fit-content;
+    background-image: url(weather.jpg);
+    background-position:1% 1%;
+    background-repeat: no-repeat;
+}
+.hleft p{
+    border: inherit;
+    font-size: 25px;
+    padding-left: 30px;
+    font-style: italic;
+    color: white;
+    width: fit-content;
+    background-image: url(weather.jpg);
+    background-position: 3% 2%;
+    background-repeat: no-repeat;
+}
+.hright{
+    width: 30%;
+}
+.hright form{
+    margin-right: 50px;
+    display: flex;
+    justify-content:space-between;
+    border-radius: 200px;
+    box-shadow: inset 0px 0px 10px 3px white;
+    padding: 15px;
+    backdrop-filter: blur(20px);
+}
+.hright form input{
+    background-color: transparent;
+    padding: 10px 10px 10px 10px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    color: white;
+}
+::placeholder{
+    color: white;
+}
+.hright form button{
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 10px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+    width: fit-content;
+    margin-inline: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.container{
+    width: 625px;
+    min-height: 60vh;
+    display: flex;
+    border-radius: 15px;
+    background-color: rgba(15, 15, 85, 0.568);
+    backdrop-filter: blur(0px);
+    box-shadow: inset -3px -3px 10px 2px white;
+    transition: all 0.3s;
+}
+.container:hover{
+    transform: scale(1.07);
+}
+.left{
+    background-size: cover;
+    background-position: center;
+    width: 35%;
+    padding: 20px;
+    border-radius: 15px;
+}
+.left1{
+    background-image: url(https://media.tacdn.com/media/attractions-splice-spp-674x446/07/82/83/56.jpg);
+}
+.left2{
+    background-image: url(https://i.pinimg.com/originals/1e/49/5d/1e495d865c921ec714a6292880d7a338.jpg);
+}
+.left3{
+    background-image: url(https://i.pinimg.com/originals/0b/3e/b1/0b3eb1394daf16ec8e8137931b1ebd2d.jpg);
+}
+.left4{
+    background-image: url(https://media.istockphoto.com/id/497947897/photo/gondar-ethiopia-fasil-ghebbi-unesco-world-heritage-site.jpg?s=612x612&w=0&k=20&c=7XIiY40eUdgpy_UOs-J4iPze66gENKAnD014XP1KcI0=);
+}
+.right{
+    width: 55%;
+    margin-inline: auto;
+    padding: 20px 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.name{
+    font-size: 30px;
+    text-align: center;
+}
+.tempin{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 5px;
+}
+.nextdays{
+    display: flex;
+    /*margin: 20px 10px;*/
+    justify-content: space-evenly;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 2px white;
+    padding: 15px 20px;
+}
+.days h2,.days i{
+    margin-inline: auto;
+}
+.days{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    transition: all 0.3s;
+
+}
+.days:hover{
+    background-color: white;
+    color: rgb(2, 2, 43);
+    transform: scale(1.1);
+}
+.temp,.nextdays{
+    margin-bottom: 30px;
+}
